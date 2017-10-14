@@ -1,0 +1,286 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Cheetax - Exasol data loader &mdash; Cheetax 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Cheetax 1.0 documentation" href="#"/>
+        <link rel="next" title="Introduction" href="introduction.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="#" class="icon icon-home"> Cheetax
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#features">Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#why-use-cheetax">Why use Cheetax?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#supported-os">Supported OS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#supported-databases">Supported Databases</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#installation">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="getting_started.html#linux-and-osx">Linux and OSX</a></li>
+<li class="toctree-l3"><a class="reference internal" href="getting_started.html#macos">macOS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="getting_started.html#windows">Windows</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#create-project">Create project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#locate-project">Locate project</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="guides.html">Guides</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="guides.html#configuration">Configuration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="guides.html#profile">Profile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="guides.html#source">Source</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="guides.html#testing">Testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guides.html#setup">Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guides.html#load">Load</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="version_history.html">Version history</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="version_history.html#version-0-1-0">Version 0.1.0</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently asked questions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#how-do-i-change-name-of-a-table">How do i change name of a table?</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">Cheetax</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>Cheetax - Exasol data loader</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cheetax-exasol-data-loader">
+<h1>Cheetax - Exasol data loader<a class="headerlink" href="#cheetax-exasol-data-loader" title="Permalink to this headline">¶</a></h1>
+<p>Cheetax is a command-line interface to load data from various sources into Exasol.
+Its primary audiance are data science that would like to get started quickly with a fully functional
+datawarehouse.
+|</p>
+<p>For maximum performance and compatibility the commands are built upon native Exasol functionality
+like the import statement and UDF. This ensures that everything is running in the acriss the cluster.
+to learn more about how UDF and Import statement, please check out the
+<a class="reference external" href="https://www.exasol.com/support/secure/attachment/49848/EXASOL_User_Manual-6.0.0-en.pdf">Exasol documentation</a>.</p>
+<p>Cheetax is free to use (<a class="reference external" href="https://github.com/Fredehagelund92/Cheetax/blob/master/LICENSE">MIT license</a>),
+open source (<a class="reference external" href="https://github.com/blue-yonder/turbodbc">GitHub</a>),
+available for Linux, OSX, and Windows.</p>
+<p>Cheetax is routinely tested with loading data from JDBC (<a class="reference external" href="https://www.mysql.com">MySQL</a>,
+<a class="reference external" href="https://www.postgresql.org">PostgreSQL</a>, <a class="reference external" href="http://www.exasol.com">EXASOL</a>,
+, <a class="reference external" href="http://microsoft.com/sql">MSSQL</a>, <a class="reference external" href="http://www.oracle.com/technetwork/database/database-technologies/sql/overview/index.html">Oracle</a>),
+<a class="reference external" href="https://en.wikipedia.org/wiki/Comma-separated_values">CSV</a> and <a class="reference external" href="http://www.json.org/">JSON</a>. However it will probably work with other JDBC connectors aswell.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides.html">Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="version_history.html">Version history</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently asked questions</a></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="introduction.html" class="btn btn-neutral float-right" title="Introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Frederik Hagelund.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
