@@ -303,7 +303,7 @@ This is done using ``setup`` command.
 
 .. code-block:: shell
 
-  cheetax setup --profile-file dev.yml --source-file account.yml
+  cheetax setup dev.yml account.yml
 
 
 
@@ -314,4 +314,4 @@ Now you can insert data into your datawarehouse using ``load`` command.
 
 .. code-block:: shell
 
-  cheetax load --profile-file dev.yml --source-file account.yml
+  cheetax load dev.yml account.yml
